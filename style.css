@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #b79891, #94716b);
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 10px 6px -6px #ead5d5;
+    border-radius: 20px;
+    background: linear-gradient(to left top, #dcc8a4, #cda68f, #b68782, #996c77, #75556c, #654a66, #544161, #41385b, #42365e, #433360, #453062, #472d64);
+}
+
+.card img {
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    height: 400px;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    left: 85%;
+    height: 500px;
+}
+
+.card .content {
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    width: 50%;
+    left: 40%;
+    transition: 0.5s;
+    padding: 20px 20px 20px 40px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .content {
+    font-family: 'Titillium Web', sans-serif;
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+
+.card .content h2 {
+
+    color: white;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.card .content ul {
+    color: white;
+    list-style: none;
+    line-height: 2rem;
+}
+
+.card .content button {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 0px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+/* ----------RESPONSIVE PART----------*/
+
+@media(max-width: 950px) {
+    .card {
+        position: relative;
+        width: 500px;
+        transition: 0.5s;
+        align-items: flex-start;
+
+    }
+
+    .card:hover {
+        height: 650px;
+        transition: 0.5s;
+    }
+
+    .card:hover img {
+        left: 55%;
+        height: 350px;
+        transition: 0.5s;
+    }
+
+    .card .content {
+        width: 100%;
+        left: 0%;
+        padding: 40px;
+    }
+}
+
+
+/*IG @ johnwill.ux@gmail.com*/
